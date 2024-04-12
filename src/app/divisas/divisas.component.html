@@ -1,0 +1,9 @@
+<h2>Divisas (por defecto Euros)</h2>
+<input [(ngModel)]="cantidad" type="number" placeholder="Cantidad">
+  <select [(ngModel)]="tipoMoneda">
+    <option value="Euro">Euro</option>
+    <option value="Libra">Libra</option>
+    <option value="Dolar">Dólar</option>
+  </select>
+  <button (click)="calcularConversion()">Calcular</button>
+  <p>Resultado: {{ calcularConversion() }}</p>
